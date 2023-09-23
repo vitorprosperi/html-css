@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tentar abrir esse site em vários dispositivos ou aumentar e diminuir o zoom no navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Foto Grande Flexível">
+    </picture><hr>
+    <h1>Reproduzindo audio</h1>
+    <p>Colocando audio:</p><br>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/far_cry.mp3 cry.mp3" type="audio/mpeg">
+        <source src="midia/far_cry.ogg" type="audio/ogg">
+        <source src="midia/far_cry.wav" type="audio/wav">
+        <!--Diferentes formatos de audio!--> 
+    </audio>
+    <h1>Reproduzindo Videos</h1>
+    <p>A seguir, exemplo de video</p><br>
+    <video src="midia/vitor_video.mp4" width="500" controls></video>
+
+    <h1>Inserindo videos do youtube!</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/j3LS53Mu4RU?si=f5RXF1UJwQcZBuId" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: rgb(57, 189, 233);
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: chocolate;
+        }
+        
+        .Morte::before{
+            content: '-> ';
+            color: black;
+        }
+
+        .Morte::after{
+           content: ' <-';
+           color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="external">Youtube</a></li>
+        <li><a href="https://www.riotgames.com/pt-br" target="_blank" rel="external" class="Morte">Riot Games</a></li>
+        <li><a href="https://www.netflix.com/br/" target="_blank" rel="external">Netflix</a></li>
+    </ul>
+</body>
+</html>
